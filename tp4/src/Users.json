@@ -3,20 +3,20 @@
         "forename" : "Jeanne",
         "name" : "Martinez",
         "birthday" : "01/01/2001",
-        "picture" : "./img/img0"
+        "picture" : "/img/img0"
     },
 
     {
         "forename": "Martine",
         "name": "Sid Otman",
         "birthday": "03/09/1998",
-        "picture": "./img/img1"
+        "picture": "/img/img1"
     },
 
     {
         "forename": "Claude",
         "name": "Petit",
         "birthday": "11/28/2009",
-        "picture": "./img/img2"
+        "picture": "/img/img2"
     }
 ]
