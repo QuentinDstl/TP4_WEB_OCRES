@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import data from './Users.json'
+
+class User extends React.Component {
+  render() {
+    return (
+      <button className="User">
+        {data[this.props.value].name}
+      </button>
+    )
+  }
+}
+
+class Content extends React.Component {
+  render() {
+    return (
+      <section className="Content">
+        test
+      </section>
+    )
+  }
+}
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <User value={0}/>
+        <User value={1}/>
+        <User value={2}/>
       </header>
-    </div>
+      <Content />
+    </main>
   );
 }
 
