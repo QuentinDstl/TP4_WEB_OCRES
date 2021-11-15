@@ -4,17 +4,11 @@ import data from './Users.json'
 
 var user_nb = 0;
 
-function changeUser(id) {
-  console.log("test");
-  user_nb = id;
-}
-
-
 class User extends React.Component {
   render() {
     return (
-      <button className="User" onClick={changeUser(this.value)}>
-        {data[this.props.value].name}
+      <button className="User" onClick={() => {user_nb = this.value; console.log(user_nb)}}>
+        {data[this.props.value].forename}
       </button>
     )
   }
